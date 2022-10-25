@@ -1,0 +1,74 @@
+:root {
+  --bg-color: hsl(218, 23%, 16%);
+  --text-color: hsl(193, 38%, 86%);
+  --advice-circle-color: hsl(150, 100%, 66%);
+  --circle-color: hsl(150, 100%, 66%);
+  --card-color: hsl(217, 19%, 24%);
+  --default-font: "Manrope", sans-serif;
+  --default-size: 28px;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--default-font);
+}
+
+.card {
+  background-color: var(--card-color);
+  width: 480px;
+  height: 290px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#id {
+  position: absolute;
+  top: 15%;
+  color: var(--advice-circle-color);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.quote {
+  font-size: var(--default-size);
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+}
+
+.divider {
+  position: absolute;
+  bottom: 20%;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--advice-circle-color);
+  margin: 0 5px;
+  position: absolute;
+  top: 90%;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.dice:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px 20px var(--circle-color);
+}
